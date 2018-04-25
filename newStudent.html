@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>New Student Assessment</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-center">
+      <h1>Ascension Catholic School Health</h1>
+      <h2>New Student Assessment</h2>
+      <p>You will need a copy of your Physician's physical and immunization records. You can gather this now and upload it at
+        the end of this form.</p>
+    </div>
+    <hr>
+
+    <h4>Family Health History</h4>
+    <form action="">
+      <div class="form-group">
+        <label for="chronic">Are there any chronic illness problems in your family such as heart disease, diabetes, cancer, convulsion, mental
+          illness? If yes, please explain.</label>
+        <textarea class="form-control" name="textarea" id="chronic" rows="5"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="visionHearing">Does any family member have a vision defect, hearing loss or spinal deformity? If yes, please explain.</label>
+        <textarea class="form-control" name="textarea" id="visionHearing" rows="5"></textarea>
+      </div>
+
+      <hr>
+
+      <h4>Child's History</h4>
+
+      <div class="form-group">
+        <label for="birthWeight">Birth Weight:</label>
+        <input name="birthWeight" id="birthWeight" type="text" placeholder="Birth Weight" required>
+      </div>
+
+      <div class="form-group">
+        <label for="deliveryProblems">Were there any pre-natal or delivery problems? If yes, please explain.</label>
+        <textarea class="form-control" name="textarea" id="deliveryProblems" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="walkTalk">Did your child walk, talk and develop at the usual time?</label>
+        <textarea class="form-control" name="textarea" id="walkTalk" rows="3"></textarea>
+      </div>
+
+      <div class="form-check">
+        <p>Does your child see a health care provider yearly?</p>
+        <input class="form-check-input" type="radio" name="seeDr" id="yes" value="yes">
+        <label class="form-check-label" for="yes">
+          Yes
+        </label>
+      </div>
+      <div class="form-group form-check">
+        <input class="form-check-input" type="radio" name="seeDr" id="no" value="no">
+        <label class="form-check-label" for="no">
+          No
+        </label>
+      </div>
+
+      <hr>
+
+      <h4>Health History (check all that apply)</h4>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="surgeries">
+        <label class="form-check-label" for="surgeries">Surgeries, Hospitalizations or Emergency Room Visits</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="childhoodDiseases">
+        <label class="form-check-label" for="childhoodDiseases">Childhood Diseases/Illnesses</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="communicableDiseases">
+        <label class="form-check-label" for="communicableDiseases">Communicable Diseases</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="visionSpeech">
+        <label class="form-check-label" for="visionSpeech">Vision, Speech, Hearing or Communication Problems</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="tiredOveractive">
+        <label class="form-check-label" for="tiredOveractive">Problem with being tired or overactive</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="emotionalBehavioral">
+        <label class="form-check-label" for="emotionalBehavioral">Emotional or Behavioral problems</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="chronicIllness">
+        <label class="form-check-label" for="chronicIllness">Chronic Illnesses or Disabling problems</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="headaches">
+        <label class="form-check-label" for="headaches">Frequent Headaches</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="colds">
+        <label class="form-check-label" for="colds">Frequent Colds/Sore Throat</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="heartLung">
+        <label class="form-check-label" for="heartLung">Heart/Lung Disease</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="convulsions">
+        <label class="form-check-label" for="convulsions">Convulsions</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="rheumaticFever">
+        <label class="form-check-label" for="rheumaticFever">Rheumatic fever</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="foodAllergies">
+        <label class="form-check-label" for="foodAllergies">Food Allergies or Sensitivities</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="urinaryProblems">
+        <label class="form-check-label" for="urinaryProblems">Urinary problems</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="diabetes">
+        <label class="form-check-label" for="diabetes">Diabetes</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="earaches">
+        <label class="form-check-label" for="earaches">Frequent Earaches</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="boneFractures">
+        <label class="form-check-label" for="boneFractures">Bone disease/Frequent fractures</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="asthma">
+        <label class="form-check-label" for="asthma">Asthma</label>
+      </div>
+
+      <div class="form-check checkbox">
+        <input type="checkbox" class="form-check-input" id="other">
+        <label class="form-check-label" for="other">Other</label>
+      </div>
+
+      <div class="form-group">
+        <label for="deliveryProblems">Please fully explain any answers checked above (include causes, severity and symptoms):</label>
+        <textarea class="form-control" name="textarea" id="explain" rows="5"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="deliveryProblems">Please list any physical education restrictions:</label>
+        <textarea class="form-control" name="textarea" id="explain" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="deliveryProblems">Please list any factors that the school nurse, counselor or your child's teacher(s) should know of which might affect
+          the student's school experience:</label>
+        <textarea class="form-control" name="textarea" id="explain" rows="3"></textarea>
+      </div>
+
+      <hr>
+
+      <div class="text-center">
+        <h4>You are required to submit a recent physician's physical and immunization records. You can usually find this information
+          from the physician's portal. A paper copy of that documentation is sufficient. If you would like to print out forms
+          to turn them in, please visit the website listed below. You may upload the forms in the next area.</h4>
+        <p>
+          <a href="https://acseagles.eduk12.net/other?item=Nurse" target="_blank">https://acseagles.eduk12.net/other?item=Nurse</a>
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <label for="exampleFormControlFile1">Upload your files here:</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        <input type="file" class="form-control-file" id="exampleFormControlFile2">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

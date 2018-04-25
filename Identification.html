@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Idenification Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text-center">
+      <h1>Ascension Catholic School Health</h1>
+      <h3>You must complete a form for each student</h3>
+    </div>
+    <hr>
+
+    <form action="">
+      <div class="form-group">
+        <label for="childLastName">Child's Last Name:</label>
+        <input name="childLastName" id="childLastName" type="text" placeholder="Child's Last Name" required>
+      </div>
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input name="firstName" id="firstName" type="text" placeholder="First Name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Primary E-mail:</label>
+        <input id="email" type="email" placeholder="Primary E-mail" required>
+      </div>
+
+      <div class="form-group form-inline">
+        <label for="birthday">
+          Birthday:
+          <select class="form-control" id="birthday" required>
+            <option value="Month">Month</option>
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+          </select>
+          <select class="form-control" id="birthday" required>
+            <option value="Day">Day</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <select class="form-control" id="birthday" required>
+            <option value="Year">Year</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+        <label class="form-check-label" for="male">
+          Male
+        </label>
+      </div>
+      <div class="form-group form-check">
+        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+        <label class="form-check-label" for="female">
+          Female
+        </label>
+      </div>
+
+      <div class="form-group form-inline">
+        <label for="grade">
+          Grade:
+          <select class="form-control" id="grade" required>
+            <option value="None"></option>
+            <option value="3 year old">3 year old</option>
+            <option value="4 year old">4 year old</option>
+            <option value="Kindergarten">Kindergarten</option>
+            <option value="1st Grade">1st Grade</option>
+            <option value="2nd Grade">2nd Grade</option>
+            <option value="3rd Grade">3rd Grade</option>
+            <option value="4th Grade">4th Grade</option>
+            <option value="5th Grade">5th Grade</option>
+            <option value="6th Grade">6th Grade</option>
+            <option value="7th Grade">7th Grade</option>
+            <option value="8th Grade">8th Grade</option>
+          </select>
+        </label>
+      </div>
+
+      <hr>
+
+      <div class="form-group">
+        <label for="allergies">List any known allergies your child has:</label>
+        <textarea class="form-control" name="textarea" id="allergies" rows="5"></textarea>
+      </div>
+
+      <div class="form-check">
+        <p>Does your child need to sit at the allergy free table?</p>
+        <input class="form-check-input" type="radio" name="table" id="yes" value="yes">
+        <label class="form-check-label" for="yes">
+          Yes
+        </label>
+      </div>
+      <div class="form-group form-check">
+        <input class="form-check-input" type="radio" name="table" id="no" value="no">
+        <label class="form-check-label" for="no">
+          No
+        </label>
+      </div>
+
+
+      <div class="form-group">
+        <label for="medications">List any medications your child is currently taking (with dosage):</label>
+        <textarea class="form-control" name="textarea" id="medications" rows="5"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="hospital">Hospital of Choice:</label>
+        <input id="hospital" type="text" placeholder="Hospital of Choice">
+      </div>
+
+      <hr>
+
+      <div>
+        <h3>State of Kansas Immunization Database</h3>
+      </div>
+
+      <div class="form-check">
+        <p>I consent to the inclusion of data of my child to the Kansas database (for immunizations) for the duration of the
+          child's attendance at Ascension Catholic School. Essentially this means health care professionals in Kansas can
+          access immunization data for my child.</p>
+        <input class="form-check-input" type="radio" name="database" id="yes" value="yes">
+        <label class="form-check-label" for="yes">
+          Yes
+        </label>
+      </div>
+      <div class="form-group form-check">
+        <input class="form-check-input" type="radio" name="database" id="no" value="no">
+        <label class="form-check-label" for="no">
+          No
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="parentName">Parent Name (constitutes a signature)</label>
+        <input id="parentName" type="text" placeholder="Parent Name">
+      </div>
+
+      <hr>
+
+      <div class="form-check">
+        <p>I authorize school personnel to obtain emergency medical care for my child in the event I cannot be reached. If transportation
+          by ambulance is required, this may be obtained.</p>
+        <input class="form-check-input" type="radio" name="emergencyCare" id="yes" value="yes">
+        <label class="form-check-label" for="yes">
+          Yes
+        </label>
+      </div>
+      <div class="form-group form-check">
+        <input class="form-check-input" type="radio" name="emergencyCare" id="no" value="no">
+        <label class="form-check-label" for="no">
+          No
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="parentName">Parent Name (constitutes a signature)</label>
+        <input id="parentName" type="text" placeholder="Parent Name">
+      </div>
+
+      <div class="form-group form-inline">
+        <label for="date">
+          Date:
+          <select class="form-control" id="date" required>
+            <option value="Month">Month</option>
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+          </select>
+          <select class="form-control" id="date" required>
+            <option value="Day">Day</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <select class="form-control" id="date" required>
+            <option value="Year">Year</option>
+            <option value="2018">2018</option>
+          </select>
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
